@@ -70,7 +70,6 @@ public class Mian {
 			tv7.getCanal() == 36)
 			ok = true;
 		
-        System.out.println(ok);
-        System.out.println(tv3.getCanal());
+    
     }
 }
