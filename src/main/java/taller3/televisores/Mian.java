@@ -1,75 +1,62 @@
 package taller3.televisores;
 
+
+
 public class Mian {
     public static void main(String[] args) {
         
-		Marca marca =  new Marca("Ipple");
+		Marca marca =  new Marca("Mitorola");
 		
 		TV tv1 =  new TV(marca, true);
-		Control control1 = new Control();
-		control1.enlazar(tv1);
-		control1.setCanal(60);
-		control1.canalDown();
-		control1.canalUp();
-		control1.canalDown();
-		control1.turnOff();
-		control1.canalUp();
+		tv1.setVolumen(5);
+		tv1.volumenDown();
+		tv1.volumenUp();
+		tv1.volumenDown();
+		tv1.volumenDown();
+		tv1.turnOff();
+		tv1.volumenUp();
 		
 		TV tv2 = new TV(marca, false);
-		Control control2 = new Control();
-		control2.enlazar(tv2);
-		control2.setCanal(20);
-		control2.canalUp();
-		control2.canalDown();
-		control2.turnOn();
-		control2.canalUp();
-		control2.canalDown();
-		control2.canalUp();
+		tv2.setVolumen(3);
+		tv2.volumenUp();
+		tv2.volumenDown();
+		tv2.turnOn();
+		tv2.volumenUp();
+		tv2.volumenUp();
+		tv2.volumenDown();
+		tv2.volumenUp();
 		
 		TV tv3 = new TV(marca, true);
-		Control control3 = new Control();
-		control3.enlazar(tv3);
-		control3.setCanal(122);
-		control3.canalUp();
-		control3.canalUp();
+		tv3.setVolumen(9);
+		tv3.volumenUp();
 		
 		TV tv4 = new TV(marca, true);
-		Control control4 = new Control();
-		control4.enlazar(tv4);
-		control4.setCanal(-1);
-		control4.canalUp();
-		control4.canalDown();
+		tv4.setVolumen(-2);
+		tv4.volumenDown();
 		
 		TV tv5 = new TV(marca, true);
-		Control control5 = new Control();
-		control5.enlazar(tv5);
-		control5.canalDown();
-		control5.canalUp();
+		tv5.setVolumen(0);
+		tv5.volumenDown();
 		
 		TV tv6 = new TV(marca, true);
-		Control control6 = new Control();
-		control6.enlazar(tv6);
-		control6.setCanal(120);
-		control6.canalUp();
-		control6.canalDown();
+		tv6.setVolumen(7);
+		tv6.volumenUp();
 		
 		TV tv7 = new TV(marca, true);
-		Control control7 = new Control();
-		control7.enlazar(tv7);
-		control7.setCanal(35);
-		control7.canalUp();
-		control7.setCanal(200);
+		tv7.setVolumen(4);
+		tv7.volumenDown();
+		tv7.setVolumen(15);
 		
 		boolean ok = false;
-		if (tv1.getCanal() == 59 && 
-			tv2.getCanal() == 2 &&
-			tv3.getCanal() == 3 &&
-			tv4.getCanal() == 1 &&
-			tv5.getCanal() == 2 &&
-			tv6.getCanal() == 119 &&
-			tv7.getCanal() == 36)
+		if (tv1.getVolumen() == 3 && 
+			tv2.getVolumen() == 3 &&
+			tv3.getVolumen() == 2 &&
+			tv4.getVolumen() == 0 &&
+			tv5.getVolumen() == 0 &&
+			tv6.getVolumen() == 7 &&
+			tv7.getVolumen() == 3)
 			ok = true;
 		
-    
+		
     }
 }

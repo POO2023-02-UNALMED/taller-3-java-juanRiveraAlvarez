@@ -103,7 +103,7 @@ public class TV {
     }
 
     public void volumenDown(){
-        if(this.estado && this.volumen>1){
+        if(this.estado && this.volumen>=1){
             this.volumen = this.volumen-1;
         }
     }
